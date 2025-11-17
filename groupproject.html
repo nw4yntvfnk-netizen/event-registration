@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>Event Registration</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 16px; background: #f8f9fa; }
+    .reg-form { max-width: 400px; margin: auto; background: white; padding: 24px; border-radius: 8px; box-shadow: 0 2px 8px #0001; }
+    .reg-form h2 { margin-bottom: 18px; color: #222; }
+    .reg-form label { display: block; margin: 14px 0 4px; }
+    .reg-form input, .reg-form select { width: 100%; padding: 8px 10px; margin-bottom: 14px; border: 1px solid #cfd8dc; border-radius: 4px; }
+    .reg-form button { background: #1565c0; color: white; border: none; width: 100%; padding: 10px; font-size: 16px; border-radius: 4px; margin-top: 12px; cursor: pointer; transition: background 0.3s; }
+    .reg-form button:hover { background: #0d47a1; }
+  </style>
+</head>
+<body>
+  <form class="reg-form" action="#" method="post">
+    <h2>Register for Event</h2>
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="event">Choose Event:</label>
+    <select id="event" name="event">
+      <option value="workshop">Web Dev Workshop</option>
+      <option value="seminar">Tech Seminar</option>
+      <option value="hackathon">Hackathon</option>
+    </select>
+
+    <label for="tshirt">T-shirt Size:</label>
+    <select id="tshirt" name="tshirt">
+      <option value="s">S</option>
+      <option value="m">M</option>
+      <option value="l">L</option>
+      <option value="xl">XL</option>
+    </select>
+
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
